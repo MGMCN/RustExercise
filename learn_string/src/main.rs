@@ -12,6 +12,7 @@ fn main() {
     // borrow_String(s); // 出错原因是因为类型不一样,String和str是不同的类型,String是可变的，str是不可变的
     borrow_str(&S); // 但是可以通过&String强制转换成&str
     borrow_str(s);
+    // borrow_String(&s); // 但是不能通过&str强制转换成&String
 
     let mut ms = String::from("hello");
     ms.push_str(" world");
