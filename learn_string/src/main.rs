@@ -42,5 +42,5 @@ fn borrow_str(s: &str) {
 
 fn borrow_mut_String(s: &mut String) {
     s.push_str(" append_something_here");
-    println!("borrow mut String = {}\n", s)
+    println!("borrow mut String = {}\n", s);
 }
